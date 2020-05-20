@@ -40,6 +40,35 @@ class LoginViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let checkResult = checkUserData()
+        
+        if !checkResult {
+            showLoginError()
+        }
+        return checkResult
+    }
+    
+    func checkUserData() -> Bool {
+        guard let login = loginInput.text, let password = passwordInput.text else {
+            return false
+        }
+        
+        if login == "user" && password == "1234" {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func showLoginError() {
+        let alert = UIAlertController(title: "Login Error", message: "Wrong login and/or password", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
     @objc func keyboardWasShown(notification: Notification){
         let info = notification.userInfo! as NSDictionary
         let kbSize = (info.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue).cgRectValue.size
@@ -59,16 +88,7 @@ class LoginViewController: UIViewController {
         self.loginScrollView?.endEditing(true)
     }
     
-    @IBAction func Logging(_ sender: Any) {
-        let login = loginInput.text!
-        let password = passwordInput.text!
-
-        if login == "user" && password == "1234" {
-            print("Login successful")
-        } else {
-            print("Login failed")
-        }
-    }
+    
     
 }
 
