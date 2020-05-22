@@ -24,14 +24,11 @@ class LoginViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillBeHidden), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let hideKeboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         loginScrollView?.addGestureRecognizer(hideKeboardGesture)
-
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
