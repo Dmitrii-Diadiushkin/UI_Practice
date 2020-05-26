@@ -47,9 +47,12 @@ class FriendsFotoCVController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FriendsFotoCVCell
         
-        let foto = friends[indexRowFoto].friendAvatar
+        let foto = friends[indexRowFoto].friendAvatar.fotoName
         // Configure the cell
-        cell.friendFoto.image = foto
+        
+        cell.indexRow = indexRowFoto
+        cell.setUpLikeControl()
+        cell.friendsFoto.image = foto
         return cell
     }
     

@@ -10,5 +10,12 @@ import UIKit
 
 class FriendsFotoCVCell: UICollectionViewCell {
     
-    @IBOutlet weak var friendFoto: UIImageView!
+    @IBOutlet weak var friendsFoto: UIImageView!
+    @IBOutlet weak var fotoLike: LikeControl!
+    var indexRow: Int = 0
+    
+    func setUpLikeControl() {
+        fotoLike.indexLike = indexRow
+        fotoLike.setUpView()
+    }
 }

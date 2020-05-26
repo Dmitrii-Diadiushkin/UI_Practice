@@ -11,6 +11,8 @@
 		6D0B4DF22475A699001E8C1A /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B4DF12475A699001E8C1A /* Group.swift */; };
 		6D0B4DF5247669E9001E8C1A /* AllGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B4DF4247669E9001E8C1A /* AllGroupsTableViewController.swift */; };
 		6D0B4DF724766A46001E8C1A /* AllGroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0B4DF624766A46001E8C1A /* AllGroupsTableViewCell.swift */; };
+		6D1F8519247C41EA002495D6 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F8518247C41EA002495D6 /* ShadowView.swift */; };
+		6D1F851C247D074E002495D6 /* LikeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1F851B247D074E002495D6 /* LikeControl.swift */; };
 		6D3D528C247424DD00182342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3D528B247424DD00182342 /* AppDelegate.swift */; };
 		6D3D528E247424DD00182342 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3D528D247424DD00182342 /* SceneDelegate.swift */; };
 		6D3D5290247424DD00182342 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3D528F247424DD00182342 /* LoginViewController.swift */; };
@@ -30,6 +32,8 @@
 		6D0B4DF12475A699001E8C1A /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		6D0B4DF4247669E9001E8C1A /* AllGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewController.swift; sourceTree = "<group>"; };
 		6D0B4DF624766A46001E8C1A /* AllGroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupsTableViewCell.swift; sourceTree = "<group>"; };
+		6D1F8518247C41EA002495D6 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		6D1F851B247D074E002495D6 /* LikeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeControl.swift; sourceTree = "<group>"; };
 		6D3D5288247424DD00182342 /* UI_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D3D528B247424DD00182342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D3D528D247424DD00182342 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,14 @@
 			path = Groups;
 			sourceTree = "<group>";
 		};
+		6D1F851A247D0733002495D6 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				6D1F851B247D074E002495D6 /* LikeControl.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		6D3D527F247424DD00182342 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 		6D3D528A247424DD00182342 /* UI_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				6D1F851A247D0733002495D6 /* Controls */,
 				6D56EC272477BCE100AEFD19 /* Friends */,
 				6D0B4DF324766993001E8C1A /* Groups */,
 				6D0B4DEE2475A65F001E8C1A /* Model */,
@@ -117,6 +130,7 @@
 				6D56EC2A2477BD2700AEFD19 /* MyFriendsTVCell.swift */,
 				6D56EC2C2477C07E00AEFD19 /* FriendsFotoCVController.swift */,
 				6D56EC2E2477C16B00AEFD19 /* FriendsFotoCVCell.swift */,
+				6D1F8518247C41EA002495D6 /* ShadowView.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -198,6 +212,8 @@
 				6D56EC292477BD0800AEFD19 /* MyFriendsTVController.swift in Sources */,
 				6D3D5290247424DD00182342 /* LoginViewController.swift in Sources */,
 				6D56EC2B2477BD2700AEFD19 /* MyFriendsTVCell.swift in Sources */,
+				6D1F8519247C41EA002495D6 /* ShadowView.swift in Sources */,
+				6D1F851C247D074E002495D6 /* LikeControl.swift in Sources */,
 				6D56EC262477AA9F00AEFD19 /* MyGroupsTableViewCell.swift in Sources */,
 				6D3D528C247424DD00182342 /* AppDelegate.swift in Sources */,
 				6D56EC242477AA8800AEFD19 /* MyGroupsTableViewController.swift in Sources */,

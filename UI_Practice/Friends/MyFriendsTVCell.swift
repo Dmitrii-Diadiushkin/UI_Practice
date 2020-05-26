@@ -10,8 +10,9 @@ import UIKit
 
 class MyFriendsTVCell: UITableViewCell {
 
-    @IBOutlet weak var avatarImage: UIImageView!
+    
     @IBOutlet weak var friendsName: UILabel!
+    @IBOutlet weak var avatarUIView: ShadowView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,5 +24,7 @@ class MyFriendsTVCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+
 
 }

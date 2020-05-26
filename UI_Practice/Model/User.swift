@@ -11,11 +11,17 @@ import UIKit
 
 struct friendsData: Equatable {
     var friendName: String
-    var friendAvatar: UIImage
+    var friendAvatar: friendFoto
 }
 
-var friends: [friendsData] = [friendsData(friendName: "Harley Quinn", friendAvatar: UIImage(named: "HQF")!),
-friendsData(friendName: "Kenny McCormick", friendAvatar: UIImage(named: "KMcKF")!),
-friendsData(friendName: "Lisa Simpson", friendAvatar: UIImage(named: "LSF")!),
-friendsData(friendName: "Poison Ivy", friendAvatar: UIImage(named: "PYF")!),
-friendsData(friendName: "Lumpy", friendAvatar: UIImage(named: "LF")!),]
+struct friendFoto:Equatable {
+    var fotoName: UIImage
+    var fotoLiked: Bool
+    var fotoLikes: Int
+}
+
+var friends: [friendsData] = [friendsData(friendName: "Harley Quinn", friendAvatar: friendFoto(fotoName: UIImage(named: "HQF")!, fotoLiked: false, fotoLikes: 1)),
+friendsData(friendName: "Kenny McCormick", friendAvatar: friendFoto(fotoName: UIImage(named: "KMcKF")!, fotoLiked: true, fotoLikes: 2)),
+friendsData(friendName: "Lisa Simpson", friendAvatar: friendFoto(fotoName: UIImage(named: "LSF")!, fotoLiked: false, fotoLikes: 3)),
+friendsData(friendName: "Poison Ivy", friendAvatar: friendFoto(fotoName: UIImage(named: "PYF")!, fotoLiked: true, fotoLikes: 4)),
+friendsData(friendName: "Lumpy", friendAvatar: friendFoto(fotoName: UIImage(named: "LF")!, fotoLiked: false, fotoLikes: 5)),]
